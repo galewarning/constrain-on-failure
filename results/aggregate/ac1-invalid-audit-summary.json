@@ -1,0 +1,16 @@
+{
+  "status": "frozen_artifact_audit_summary",
+  "case_count": 3,
+  "unique_task_count": 1,
+  "affected_models": [
+    "Qwen3-0.6B",
+    "Qwen3-1.7B",
+    "Granite 3.3 2B"
+  ],
+  "historical_results_invalidated": false,
+  "cause_class": "schema_compiler_expressiveness_boundary",
+  "finding": "All three model rows were complete constrained outputs for the same task. Portable JSON Schema number accepts integer-valued JSON numbers, while the frozen BFCL-aligned validator requires exact float instances for nested float items.",
+  "truncation_or_interruption": false,
+  "raw_outputs_included": false,
+  "note": "Item-level identifiers and generations are retained in the private study record and intentionally excluded from this release artifact."
+}

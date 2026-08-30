@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local benchmark and model artifacts
+models/
+data/
+**/runs/
+**/result/
+**/score/
+*.gguf
+*.safetensors
+*.log
+checkpoint.jsonl
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
